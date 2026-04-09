@@ -1,0 +1,10 @@
+*.docx
+*.pdf
+*.zip
+
+.venv/
+venv/
+
+.DS_Store
+.vscode/
+.idea/
