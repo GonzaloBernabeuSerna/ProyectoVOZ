@@ -4,8 +4,8 @@ from datetime import datetime
 # --- AJUSTES ---
 PUERTO = "COM7"  # <--- Aseguraos de que es el puerto correcto
 BAUDIOS = 115200
-DURACION_S = 10  # Tiempo que grabará cada vez
-SUJETO = "david"
+DURACION_S = 20  # Tiempo que grabará cada vez
+SUJETO = "javi"
 
 # Crear carpeta de datos si no existe (se crea en la misma carpeta donde ejecutes el script)
 if not os.path.exists("datos"):
