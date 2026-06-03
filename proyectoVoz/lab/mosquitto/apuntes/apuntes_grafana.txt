@@ -1,0 +1,25 @@
+3 contenedores corriendo y script puente_mqtt_influx.py (python .\lab\puente_mqtt_influx.py) en ejecución (y placa con el main en ejecución):
+
+    Abrir navegador en http://localhost:3000.
+
+    Usuario: admin | Contraseña: admin.
+
+    Ve al menú izquierdo (engranaje o icono de conexiones) -> Connections -> Data Sources -> Add data source.
+
+    Buscar y seleccionar InfluxDB.
+
+    Configura estos parámetros vitales:
+
+        Query Language: Cambia el selector a Flux (esencial para InfluxDB v2).
+
+        URL: Pon http://influxdb:8086 (al estar en Docker, usan el nombre del contenedor, no localhost).
+
+        Desactiva Basic Auth.
+
+        Organization: biomedica
+
+        Token: super-secreto-token-1234
+
+        Default Bucket: datos_sensores
+
+    Dale a Save & Test. Debería aparecer un tick verde.
